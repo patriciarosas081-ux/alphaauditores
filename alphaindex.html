@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaTech Auditores | Ecosistema de Aseguramiento Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --midnight: #050a14;
+            --electric-cyan: #00e5ff;
+            --platinum: #e2e8f0;
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--midnight);
+            color: var(--platinum);
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section con Imagen de Fondo y Logo */
+        .hero-section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(5,10,20,0.7), var(--midnight)), 
+                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070'); /* Imagen corporativa real */
+            background-size: cover;
+            background-position: center;
+            padding: 0 20px;
+        }
+
+        .logo-container img {
+            width: 180px;
+            filter: drop-shadow(0 0 15px var(--electric-cyan));
+            margin-bottom: 20px;
+        }
+
+        .hero-section h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3.5rem;
+            margin: 0;
+            background: linear-gradient(90deg, #fff, var(--electric-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Contenedores y Secciones */
+        .container { max-width: 1200px; margin: auto; padding: 80px 20px; }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 50px;
+            color: var(--electric-cyan);
+        }
+
+        /* Tarjetas Estilo Glassmorphism */
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 40px;
+            transition: all 0.4s ease;
+        }
+
+        .glass-card:hover {
+            border-color: var(--electric-cyan);
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 229, 255, 0.1);
+        }
+
+        /* Grid de Misión/Visión con Imágenes */
+        .split-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .image-box img {
+            width: 100%;
+            border-radius: 20px;
+            filter: grayscale(40%) contrast(110%);
+        }
+
+        /* Formulario Estilo Alpha Intelligence */
+        .onboarding-container {
+            background: linear-gradient(145deg, #0a1120, #050a14);
+            border-radius: 30px;
+            padding: 50px;
+            border: 1px solid var(--electric-cyan);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 18px;
+            margin-bottom: 20px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        input:focus { outline: none; border-color: var(--electric-cyan); }
+
+        .cta-button {
+            background: var(--electric-cyan);
+            color: var(--midnight);
+            padding: 20px;
+            width: 100%;
+            border: none;
+            border-radius: 12px;
+            font-weight: 700;
+            font-family: 'Orbitron', sans-serif;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            letter-spacing: 2px;
+            box-shadow: 0 0 20px var(--electric-cyan);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="logo-container">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.1Fh34iTmxgLwO8N9Pk-3HgHaHL?w=1024&h=992&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Alpha Auditores & Consultores Logo">
+        </div>
+        <h1>ALPHAAUDITORES</h1>
+        <p style="font-size: 1.2rem; max-width: 600px;">Transparencia radical para un mundo digital.</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Nuestra Identidad</h2>
+        <div class="split-grid">
+            <div class="glass-card">
+                <h3 style="color: var(--electric-cyan);">Misión</h3>
+                <p>Revolucionar la confianza empresarial mediante la convergencia de la auditoría de precisión y la inteligencia de datos.</p>
+            </div>
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=800" alt="Auditores Senior trabajando">
+            </div>
+        </div>
+
+        <div class="split-grid">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" alt="Tecnología de Datos">
+            </div>
+            <div class="glass-card">
+                <h3 style="color: var(--electric-cyan);">Visión</h3>
+                <p>Ser el estándar global de transparencia, convirtiendo la auditoría en el motor de innovación y seguridad de las empresas del futuro.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Ecosistema de Aseguramiento</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+            <div class="glass-card" style="text-align: center;">
+                <h4>Smart Audit</h4>
+                <p>Auditoría con IA. Certeza absoluta.</p>
+                <p><strong>Desde S/ 6,000</strong></p>
+            </div>
+            <div class="glass-card" style="text-align: center;">
+                <h4>Tax Digital Shield</h4>
+                <p>Blindaje fiscal preventivo digital.</p>
+                <p><strong>Desde S/ 4,500</strong></p>
+            </div>
+            <div class="glass-card" style="text-align: center;">
+                <h4>M&A Readiness</h4>
+                <p>Maximiza el valor ante inversionistas.</p>
+                <p><strong>Consultar Cotización</strong></p>
+            </div>
+        </div>
+
+        <section id="onboarding" style="margin-top: 100px;">
+            <h2 class="section-title">Iniciar Onboarding</h2>
+            <div class="onboarding-container">
+                <form>
+                    <input type="text" placeholder="Nombre de la Empresa" required>
+                    <input type="email" placeholder="Correo Corporativo" required>
+                    <select>
+                        <option value="">Rango de Facturación Anual (Soles)</option>
+                        <option>Hasta S/ 1,000,000</option>
+                        <option>S/ 1,000,000 - S/ 10,000,000</option>
+                        <option>Más de S/ 10,000,000</option>
+                    </select>
+                    <textarea rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+                    <button type="submit" class="cta-button">ENVIAR A ALPHA AUDITORES Y CONSULTORES</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer style="text-align: center; padding: 40px; border-top: 1px solid var(--glass-border); font-size: 0.8rem; color: #666;">
+        &copy; 2026 Alpha Auditores & Consultores | Tech-Audit Firm de Alto Impacto
+    </footer>
+
+</body>
+</html>
